@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // --- 2) map any friendly alternate slugs to the exact option values (optional)
     // Use this if you ever want multiple aliases; for now it's identity mapping
     const validSlugs = new Set([
-      'back-exfoliation','deep-tissue','manicure','pedicure','body-scrub','head-massage'
+      'back-exfoliation','deep-tissue','manicure','pedicure','body-scrub','back-exfoliation','aromatherapy-massage','full-body','deep-cleansing','gel-soak','deep-cleansing','gents-manicure','deep-tissue','manicure','cupping','head-massage'
     ]);
 
     // --- 3) set the dropdown value if provided and valid
