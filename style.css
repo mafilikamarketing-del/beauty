@@ -1,0 +1,308 @@
+/* style.css */
+body {
+  background-image:;
+  background-size: cover;          /* makes image cover full screen */
+  background-position: center;     /* centers the image */
+  background-repeat: no-repeat;    /* prevents tiling */
+}
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  left: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px #999;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 750px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .whatsapp-float img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #659977;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  box-siz:absolute ;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #006400;
+}
+.full-banner {
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+full-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.full-banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.full-banner p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.banner-btn {
+  background-color: #659977;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.banner-btn:hover {
+  background-color: #ff4081;
+}
+
+.hero {
+   background:url("https://images.ctfassets.net/09muo917z9ra/2cN1B9vFn3tfu7BHkFxKTa/0304f9521cc92d55e56da25cab6c0963/1000001037.jpg") center/cover no-repeat;
+  text-align: center;
+  padding: 6rem 2rem;
+
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #006400;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #000000;
+  color: #659977;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #301934;
+}
+.full-banner {
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.full-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+ }
+
+.full-img {
+  width: 100%;
+  height: auto;
+  display: block
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.banner-btn {
+  background-color: #ff80ab;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.banner-btn:hover {
+  background-color: #ff4081;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.full-banner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  padding: 100px 20px;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.full-banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.full-banner p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.banner-btn {
+  background-color: #ff80ab;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.banner-btn:hover {
+  background-color: #ff4081;
+}
+
+
+h2 {
+  color: #006400;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+service.html {
+  background-color: #333;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #ffd700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea, button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input, textarea {
+  background-color: #333;
+  color: #fff;
+}
+
+button {
+  background-color: #000000;
+  color: #ffd700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #c89a3c;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #659977;
+  font-size: 0.9rem;
+  color: #000000;
+}
