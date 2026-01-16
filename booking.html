@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
@@ -12,13 +12,14 @@
 </script>
  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calming Currents Beauty Spa |Beauty Wellness In Randburg</title>
-  <meta name="description" content="Unlock Wellness With Our Healing Services- offering proffesional mobile massage treatments, beauty treatments and stress relief treatments at the comfort of your home. Book Your Luxury Exprience Today!">
+  <title>Calming Currents Beauty Spa |Booking Page</title>
+  <meta name="description" content="Unlock Wellness With Our Healing Services- offering proffesional mobile massage, manicure and pedicure and stress relief treatments at the comfort of your home. Book Your Luxury Exprience Today!">
   <meta name="keywords" content="mobile spa, massage, Randburg, calm, Wellness, Sandton, proffesional, stress relief">
   <link rel="stylesheet" href="style.css">
   <script defer src="main.js"></script>
+</head>
 
- </head>
+</style>
 <body>
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/27697507959" class="whatsapp-float" target="_blank" rel="noopener">
@@ -26,69 +27,101 @@
 </a>
 
   <header>
-    <div class="logo"><img src="https://images.ctfassets.net/09muo917z9ra/5EhOAmkNph6p93Y75Ai807/e8b731a23d3b2fb2ba4026050d04cc1d/Gohn-s_bakery_studio.png" width="60px"   alt="Calming Currents Logo">
-  <strong>Calming Currents Beauty Spa</strong><br><small style="color:#c71585"></small></div></div>
+    <div class="logo"><img src="https://images.ctfassets.net/09muo917z9ra/5EhOAmkNph6p93Y75Ai807/e8b731a23d3b2fb2ba4026050d04cc1d/Gohn-s_bakery_studio.png" width="70px"   alt="Calming Currents Logo">
+  <strong>Calming Currents Beauty Spa</strong><br><small style="color:#000000"></small></div></div>
     <nav>
       <ul>
         <li><a href="/index.html">Home</a></li>
-        </ul>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="home" class="hero">
+ <section id="home" class="hero">
     <h1>Unlock Wellness With Our Healing Services.</h1>
     <p>Your Path To Serenity Begins.</p>
-    <a href="/read more.html" class="btn">Read More</a>
+    <a href="/contact.html" class="btn">Chat With Us</a>
   </section>
 
-<section id="about">
-<h2>Our Beauty Treatments</h2>
+<body>
+  <h1>Book a Service</h1>
+  <p class="note">We see which service you chose and pre-select it for you. Change it if you want another.</p>
 
-<p>Step into a sanctuary where elegance meets rejuvenation. Our exclusive beauty treatments are designed to bring out your natural glow and restore balance to both skin and soul. Experience our Deep Facial Cleansing, available with or without LED Light therapy, to deeply purify, revitalize, and illuminate your complexion with a radiant, youthful finish. Pamper yourself—or him—with our luxurious manicure and pedicure services, tailored for both men and women, where every detail is perfected to deliver a flawless, refined look. And when it’s time for a fresh start, our gentle gel soak-off treatment ensures a smooth, damage-free renewal for your nails. At Calming Currents Beauty Spa, beauty isn’t just a treatment—it’s an experience of pure sophistication.</p>
+  <form id="bookingForm" action="https://formspree.io/f/mqaylnwg" method="POST">
+    <label for="serviceSelect">Service</label>
+    <select id="serviceSelect" name="service" required>
+      <!-- These values must match the slugs used in links -->
+      <option value="">— Choose a service —</option>
+      <option value="head-massage">Head and Neck Massage — 45min</option>
+      <option value="full-body">Full Body Exfoliation — 60min</option>
+      <option value="gel-soak">Gel Soak Off — 60min</option>
+      <option value="gents-manicure">Gents Manicure and Pedicure — 60min</option>
+      <option value="deep-cleansing">Deep Facial Cleansing — 60min</option>
+      <option value="deep-tissue">Deep Tissue Massage — 60min</option>
+      <option value="manicure">Manicure and Pedicure — 45min</option>
+      <option value="aromatherapy-massage">Aromatherapy Massage — 60min</option>
+      <option value="back-exfoliation">Body Exfoliation — 60min</option>
+      <option value="cupping">Cupping Massage — 60min</option>
+    </select>
 
- <section id="service.html">
+    <label for="name">Your name</label>
+    <input id="name" name="name" required />
 
- <div class="service-list"> 
-    <div section="service">
-        <h3>Deep Cleansing Facial With Led Light</h3>
-        <img src="https://images.ctfassets.net/09muo917z9ra/2ntrlXjHldjkHmAgR87g0J/dfe233b5f4e4115c4ccda766e320b56a/IMG-20251024-WA0001.jpg" wdith="190" height="200"  alt=deep cleansing facials >
-        <p>R620.00 - Is a rejuvenating treatment that throughly purifies the skin, unclogging pores, reducing impurities and revealing a brighter smoother complexion</p>
-        <a href="/booking.html?service=deep-cleasning" class="btn">Book Now</a>
-      </div> 
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required />
 
-       <div class="service">
-        <h3>Manicure and Pedicure</h3>
-        <img src="https://images.ctfassets.net/09muo917z9ra/3fjtsP9Zy25SynChTr79xb/0536b4896a00d7fa6fd4b0c0b02887f2/pexels-andreamostiphotography-17056222.jpg" width="80" height="150">
-        <img src="https://images.ctfassets.net/09muo917z9ra/3g9CCkRscreCaRJAppNa74/1ae9796fd94020d004b5b9873e4105ac/pexels-rdne-7755653.jpg" width="80" height="150"  alt=manicure and pedicure>
-        <p>R400.00 -A Luxurious nail treatment featuring long lasting gel application on both hands and feet for a vibrant , chip resistant finish </p>
-        <a href="/booking.html?service=manicure" class="btn">Book Now</a>
-      </div>
-      
-       <div class="service">
-        <h3>Gents Manicure and Pedicure</h3>
-        <img src="https://images.ctfassets.net/09muo917z9ra/1nGVbPdyl59jhWAuBdXy11/02ee4f8f83abbc5e7bc9a3481428f6a3/7c15b8b2-db16-4200-9fb0-3d336e55acd7.png" width="190" height="200"  alt=gents manicure and pedicure >
-        <p>R499.00 -luxurious grooming treatment tailored for men ,perfecting nail shape ,cuticle care and overall hand and foot wellness.  </p>
-        <a href="/booking.html?service=gents-manicure" class="btn">Book Now</a>
-      </div>
+    <label for="phone">Phone (required)</label>
+    <input id="phone" name="phone" />
 
-       <div class="service">
-        <h3>Gel Soak Off</h3>
-        <img src="https://images.ctfassets.net/09muo917z9ra/20PTsZ5urIDc4SDar9nhMg/0e61a75876b56d01bd5aa3c1485df95f/pexels-cottonbro-5871914.jpg" width="190" height="200"  alt=nail treatment >
-        <p>R50.00 -Is a Meticulous nail treatment that gently dissolves and removes gel polish, leaving your natural nails healthy, smooth and prepped for a fresh application. </p>
-        <a href="/booking.html?service=gel-soak" class="btn">Book Now</a>
-      </div>
-    </div>  
-  </section>
+    <label for="notes">Any notes or preferred time (optional)</label>
+    <textarea id="notes" name="notes" rows="3"></textarea>
 
-<section id="about">
+    <!-- hidden field to send the original source link (useful for analytics) -->
+    <input type="hidden" id="origin" name="origin" value="">
 
-  </section>
-<section id="footer">
-  <footer>
-    <p>&copy; 2025 Calming Currents Beauty Spa PTY(LTD) | Reg No: 2025/544294/07 | Bringing Luxurious Massage at Your doorstep</p>
-  </footer>
+    <button type="submit" class="btn">Book Now</button>
+  </form>
+
+
+
+  <script>
+    // --- 1) read ?service= from the URL
+    const params = new URLSearchParams(window.location.search);
+    const serviceFromUrl = params.get('service');
+
+    // --- 2) map any friendly alternate slugs to the exact option values (optional)
+    // Use this if you ever want multiple aliases; for now it's identity mapping
+    const validSlugs = new Set([
+      'back-exfoliation','aromatherapy-massage','full-body','deep-cleansing','gel-soak','deep-cleansing','gents-manicure','deep-tissue','manicure','cupping','head-massage'
+    ]);
+
+    // --- 3) set the dropdown value if provided and valid
+    const select = document.getElementById('serviceSelect');
+    if (serviceFromUrl && validSlugs.has(serviceFromUrl)) {
+      select.value = serviceFromUrl;
+    }
+
+    // --- 4) store the page the user came from as origin (useful for tracking)
+    // e.g. /service.html#manicure or full URL
+    document.getElementById('origin').value = document.referrer || window.location.href;
+
+    // --- 5) OPTIONAL: show a friendly message if unknown service
+    if (serviceFromUrl && !validSlugs.has(serviceFromUrl)) {
+      // if service unknown, you could show a note. For now we just leave the dropdown untouched.
+      console.warn('Unknown service requested:', serviceFromUrl);
+    }
+  </script>
 </body>
 </html>
 
-</section>
-  
+
+
+
+
+
+  <footer>
+    <p>&copy; 2025 Calming Currents Beauty Spa PTY(LTD) | Reg No: 2025/544294/07 | Luxurious Experience at your door step</p>
+  </footer>
+</body>
+</html>
+ 
