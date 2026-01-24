@@ -18,24 +18,7 @@
   <script defer src="main.js"></script>
 </head>
 <!-- 2️⃣ Add this script at the bottom of your HTML (before </body>) -->
-<script>
-  const path = window.location.pathname.split("/").filter(Boolean);
-  const breadcrumb = document.getElementById("breadcrumb");
-  let html = `<a href="/">Home</a>`;
-  let pathAcc = "";
 
-  path.forEach((part, index) => {
-    pathAcc += `/${part}`;
-    const name = part.replace("Massages", "service.html");
-    if (index === path.length - 1) {
-      html += ` &gt; <span>${Massage}</span>`;
-    } else {
-      html += ` &gt; <a href="${service.html}">${massage}</a>`;
-    }
-  });
-
-  breadcrumb.innerHTML = html;
-</script>
 
 <!-- 3️⃣ Optional styling -->
 <style>
@@ -147,5 +130,24 @@ Our team of qualified therapists combines professionalism with genuine care, ens
   <footer>
     <p>&copy; 2025 Calming Currents Beauty Spa PTY(LTD) | Reg No: 2025/544294/07 | Luxurious Massage at your door step</p>
   </footer>
+
+  <script>
+  const path = window.location.pathname.split("/").filter(Boolean);
+  const breadcrumb = document.getElementById("breadcrumb");
+  let html = `<a href="/">Home</a>`;
+  let pathAcc = "";
+
+  path.forEach((part, index) => {
+    pathAcc += `/${part}`;
+    const name = part.replace("Massages", "service.html");
+    if (index === path.length - 1) {
+      html += ` &gt; <span>${Massage}</span>`;
+    } else {
+      html += ` &gt; <a href="${service.html}">${massage}</a>`;
+    }
+  });
+
+  breadcrumb.innerHTML = html;
+        </script>
 </body>
 </html>
